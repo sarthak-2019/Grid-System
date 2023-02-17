@@ -2,7 +2,36 @@
   background-color: red;
   height: 700px;
   width: 900px;
+  display: grid;
+  /* grid-template-columns: 133px 133px 133px;
+  grid-template-rows: 133px 133px 133px; */
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 128px 1fr 1fr;
+
+  row-gap: 12px;
+  column-gap: 12px;
+
+  /* justify-items: center;
+  align-items: center; */
+  place-items: center;
+
+
+
 }
 .item{
   background-color: aqua;
+height: 122px;
+  width: 122px;
+}
+.item1{
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: 1/span 3;
+  background-color: green;
+  /* justify-self: center; */
+}
+.footer{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: green;
 }
